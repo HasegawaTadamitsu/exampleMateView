@@ -1,0 +1,4 @@
+exampleMateView
+===============
+
+example materialized view
