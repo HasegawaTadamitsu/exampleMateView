@@ -12,21 +12,6 @@ begin
 end;
 /
 
-select count(*) from bigData1;
-select count(*) from bigData1 where seq = 0;
-select count(*) from bigData1 where seq = 1;
-
-
-select count(distinct id) from bigData1;
-
-select count(*) from inx;
-select count(*) from inx where liveFlg ='1';
-
-
-select count(*) from bigData2;
-select count(*) from bigData2 where delFlg != '1';
-
-
 
 
 CREATE OR REPLACE FUNCTION GET_BIGDATA1
@@ -53,10 +38,6 @@ BEGIN
   RETURN 0;
 END;
 /
-select GET_BIGDATA1(50) from dual;
-select GET_BIGDATA1(1)  from dual;
-
-
 
 
 
@@ -93,13 +74,10 @@ WITH READ ONLY;
 
 
 set autotrace traceonly
-! date
 select * from V_EX1 order by 1;
-! date
 select * from V_EX2 order by 1;
-! date
 select * from V_EX3 order by 1;
-! date
+
 
 
 EOF

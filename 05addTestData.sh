@@ -1,8 +1,7 @@
 #!/bin/sh
 . ./oracle.env
 
- 
-ruby 05addTestData.rb  > ./data/add.sql
+ruby 99CreateTestData.rb 100 10000000 > ./data/add.sql
 
 exec_sql <<EOF 
 

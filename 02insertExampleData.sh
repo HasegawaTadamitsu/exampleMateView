@@ -1,8 +1,8 @@
 #!/bin/sh
 . ./oracle.env
 
- 
-ruby 02createTestData.rb  > ./data/insert.sql
+sure_and_exit "truncate and create testdata"
+ruby 99CreateTestData.rb  1000 0 > ./data/insert.sql
 
 exec_sql <<EOF 
 truncate table bigdata1;

@@ -32,7 +32,6 @@ bigdata2は、bigdata1と同じ行為に対し、付随情報を管理してい�
 ただし、削除案件がるため、場合によっては削除されます。
 
 
-02createTestData.rb
 02insertExampleData.sh*
 テストデータの作成です。
 ruby で、insertSQLのテキストファイルを作成し、
@@ -57,15 +56,12 @@ PL/SQLのfunctionを使ってみて更新回数の最大値を求めるように
 えー。。
 
 
-05addTestData.rb
 05addTestData.sh*
 追加データです。手抜きです。
 
 90RefreshMV.sh*
 マテライズドビューを完全再構築します。
 
-99SelectMV.sh*
-マテライズドビューに対し、selectを行います。
 
 
 oracle.env*
